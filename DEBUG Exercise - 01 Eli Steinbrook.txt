@@ -1,0 +1,39 @@
+'''
+Author: Eli Steinbrook
+Program: Debugging exercise 1
+Date: 10/20/2025
+'''
+//Question: You have been tasked with reviewing and updating this program. What steps would you take to identify any issues in the code?
+//Your Response: Look through declarations, conditional statement, and through while loop
+
+//Question: What actions could the developer have taken to minimize the number of errors?
+//Your Response: Possibly modularization if it is a program that could be modularized. Follow the testing plan.
+
+//Debbugging Exercise:
+
+// This pseudocode is intended to determine whether students have
+// passed or failed a course; student needs to average 60 or
+// more on two tests. 
+start
+   Declarations
+      num firstTest
+      num secondTest
+      num average
+      num PASSING = 60
+   output "Enter first score or 0 to quit "
+    'firstTest = input("Enter first score or 0 to quit")'
+   while firstTest <> 0
+      output "Enter second score "
+      input secondTest
+      average = firstTest + secondTest / 2
+      ouput "Average is ", average
+      if average >= PASSING then
+         output "Pass"
+      else
+         output "Fail"
+      endif
+      output "Enter first score or 0 to quit "
+	  input firstTest
+   endwhile
+stop
+

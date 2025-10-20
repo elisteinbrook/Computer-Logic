@@ -1,0 +1,74 @@
+'''
+Author: Eli Steinbrook
+Program: Debugging exercise 3
+Date: 10/20/2025
+'''
+
+// This pseudocode is intended to display employee net pay values.
+// All employees have a standard $45 deduction from their checks.
+// If an employee does not earn enough to cover the deduction
+// an error message is displayed.
+start
+Declarations
+string name
+num hours
+num rate
+string DEDUCTION = 45
+string EOFNAME = "ZZZ"
+num gross
+num net
+output "Enter first name or ", EOFNAME, " to quit"
+input name
+While name not equal to EOFNAME // if replaced with while
+output "Enter hours worked for ", name
+input hours
+output "Enter hourly rate for ", name
+input rate
+gross = hours * rate
+net = gross - DEDUCTION
+If net > 0 then // while replaced with if
+output "Net pay for ", name, " is ", net
+else
+output "Deductions not covered. Net is 0."
+Endif // endwhile replaced with endif
+output "Enter next name or ", EOFNAME, " to quit"
+input name
+Endwhile //endif replaced with endwhile
+output "End of job"
+stop
+
+/ / receives three numbers from the user
+/ / compares two numbers to see if any of the two add up to the third
+/ / initialization
+END_VALUE = 0
+
+Num1 = 0
+Num2 = 0
+Num3 = 0
+
+/ / get data
+Output “Please enter the number 1 : “
+Num1 = input
+
+While num1 not equal END_VALUE:
+        Output “Please enter a number 2: “
+        Num2 = input
+        Output “Please enter a number 3: “
+        Num3 = input
+
+If  (num1 + num2) = num3:
+    Output “Number 1 + number 2 equals Number 3
+Else:
+        If (num2 + num3) == num1 :
+         Output “Number 3 + Number 1 equals number 2”
+Else:
+        Output “No combination of 2 numbers equals the third number.”
+Endif
+Endif
+Endif 
+Output “Please enter a number1: “
+Num1 = input
+endwhile
+
+output "End of job"
+stop
